@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login & Registro</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- SEMICÍRCULO con texto -->
+    <div class="form-toggle" id="togglePanel">
+      <h1 id="titleText">¡Bienvenido!</h1>
+      <p id="descText">Ingrese sus datos personales para usar todas las funciones del sitio</p>
+      <button id="toggleBtn">Crear cuenta</button>
+    </div>
+
+    <!-- FORMULARIOS -->
+    <div class="form-content">
+      <div class="form-wrapper">
+        <!-- LOGIN -->
+        <form id="loginForm" class="form active">
+          <h2>Iniciar Sesión</h2>
+          <input type="email" placeholder="Correo electrónico" required />
+          <input type="password" placeholder="Contraseña" required />
+          <a href="#">¿Olvidaste tu contraseña?</a>
+          <button type="submit">INICIAR SESIÓN</button>
+        </form>
+
+        <!-- REGISTRO -->
+        <form id="registerForm" class="form">
+          <h2>Registrarse</h2>
+          <input type="text" placeholder="Nombre de usuario" required />
+          <input type="email" placeholder="Email" required />
+          <input type="password" placeholder="Contraseña" required />
+          <button type="submit">REGISTRARSE</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
