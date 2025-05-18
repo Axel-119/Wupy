@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Red Social</title>
+  <link rel="stylesheet" href="styles/navbar.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <!-- Lado izquierdo: Logo -->
+    <div class="nav-left">
+      <img src="img/LOGO.png" alt="Logo" class="logo" />
+    </div>
+
+    <!-- Centro: Iconos principales -->
+    <div class="nav-center">
+      <div class="nav-icon">
+        <img src="img/icono/inicio.png" alt="Inicio" />
+        <span class="tooltip">Inicio</span>
+      </div>
+      <div class="nav-icon">
+        <img src="img/icono/explorar.png" alt="Explorar" />
+        <span class="tooltip">Explorar</span>
+      </div>
+      <div class="nav-icon">
+        <img src="img/icono/amigos.png" alt="Amigos" />
+        <span class="tooltip">Amigos</span>
+      </div>
+    </div>
+
+    <!-- Derecha: Chat, notificaciones y perfil -->
+    <div class="nav-right">
+      <div class="nav-icon">
+        <img src="img/icono/chat.png" alt="Chat" />
+        <span class="tooltip">Chat</span>
+      </div>
+      <div class="nav-icon">
+        <img src="img/icono/noti.png" alt="Notificaciones" />
+        <span class="tooltip">Notificaciones</span>
+      </div>
+
+      <!-- Menú de perfil -->
+      <div class="profile-menu">
+        <img src="perfil.jpg" alt="Perfil" class="avatar" id="profile-avatar" />
+
+        <!-- Menú desplegable -->
+        <div class="dropdown-menu" id="dropdown-menu">
+          <!-- Encabezado con imagen y nombre -->
+          <a href="perfil.html" class="menu-header">
+            <img src="perfil.jpg" alt="Mi perfil" class="menu-avatar" />
+            <span class="menu-username">Nombre Apellido</span>
+          </a>
+          <hr />
+          <a href="#"><img src="img/icono/confi.png" /> Configuración y privacidad</a>
+          <a href="#"><img src="img/icono/soporte.png" /> Ayuda y soporte técnico</a>
+          <a href="#"><img src="img/icono/cerrar.png" /> Cerrar sesión</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <script src="js/menu_perfil.js"></script>
+</body>
+</html>
