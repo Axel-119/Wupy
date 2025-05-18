@@ -1,0 +1,132 @@
+/* Estilos generales */
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+/* Barra de navegación */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px 40px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Sección izquierda */
+.nav-left .logo {
+  height: 50px;
+}
+
+/* Centro */
+.nav-center {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.nav-icon {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.nav-icon img {
+  width: 36px;
+  height: 36px;
+}
+
+.tooltip {
+  position: absolute;
+  bottom: -25px;
+  background-color: #333;
+  color: #fff;
+  font-size: 12px;
+  padding: 5px 8px;
+  border-radius: 4px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+}
+
+.nav-icon:hover .tooltip {
+  opacity: 1;
+}
+
+/* Derecha */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Menú desplegable */
+.profile-menu {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 10px 0;
+  min-width: 230px;
+  z-index: 999;
+}
+
+.dropdown-menu a {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.dropdown-menu a img {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f2f2f2;
+}
+
+.menu-header {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #000;
+}
+
+.menu-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.menu-username {
+  font-weight: bold;
+}
+
+/* Mostrar menú al hacer clic */
+.profile-menu.active .dropdown-menu {
+  display: block;
+}
